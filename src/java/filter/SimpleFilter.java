@@ -58,6 +58,8 @@ public class SimpleFilter implements Filter {
             return true;
         } else if (url.equalsIgnoreCase("http://jose.ws:8383")) {
             return true;
+        } else if (url.equalsIgnoreCase("http://192.168.1.90:8383")) {
+            return true;
         }
         return false;
     }
