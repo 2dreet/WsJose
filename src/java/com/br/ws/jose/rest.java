@@ -5,6 +5,7 @@
  */
 package com.br.ws.jose;
 
+import entidade.Produto;
 import entidade.Teste;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -30,7 +31,8 @@ public class rest {
     @POST
     @Produces("application/json;charset=UTF-8")
     @Consumes("application/json;charset=UTF-8")
-    public void getTeste(Teste teste) {
-        System.out.println("Pegou");
+    public Produto getTeste(Produto produto) {
+        System.out.println("Pegou " + produto.getDescricao());
+        return produto;
     }
 }
