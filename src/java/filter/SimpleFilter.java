@@ -16,13 +16,13 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.core.HttpHeaders;
-import org.springframework.stereotype.Component;
+
 
 /**
  *
  * @author Jose
  */
-@Component
+
 public class SimpleFilter implements Filter {
 
     @Override
